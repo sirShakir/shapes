@@ -1,0 +1,45 @@
+.flagContainer{
+    background-color: black;
+    width: 1000px;
+    height: 500px;
+}
+
+#flag1{
+    background-image: linear-gradient(to right, #af711f , #ff8800);    width: 33%;
+    height: 50%;
+    float: left;
+}
+
+#flag2{
+    background-image: linear-gradient(to right, #000000 , #ffffff);
+    width: 67%;
+    height: 50%;
+    animation-iteration-count: infinite;
+    float: left;
+    animation-name: example2;
+    animation-duration: 4s;
+}
+
+#flag3{
+    width: 100%;
+    height: 50%;
+    float: left;
+    background-image: linear-gradient(to right, #286b33 , #24d641);
+    animation-name: example3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example3 {
+    0%   {background-image: linear-gradient(to right, #000000 , #24d641);}
+    25%  {background-image: linear-gradient(to right, #aaff7a , #000000);}
+    50%  {background-image: linear-gradient(to right, #000000 , #5cff00);}
+    100% {background-image: linear-gradient(to right, #286b33 , #000000);}
+}
+
+@keyframes example2 {
+    0%   {background-image: linear-gradient(to right, #bac1b6 , #000000);}
+    25%  {background-image: linear-gradient(to right, #eff7ea , #686868);}
+    50%  {background-image: linear-gradient(to right, #000000 , #423e39);}
+    100% {background-image: linear-gradient(to right, #ffffff , #000000);}
+}
